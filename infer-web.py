@@ -924,7 +924,7 @@ with gr.Blocks() as app:
                         )
                         input_audio0 = gr.Textbox(
                             label=i18n("输入待处理音频文件路径(默认是正确格式示例)"),
-                            value="E:\\codes\\py39\\vits_vc_gpu_train\\todo-songs\\冬之花clip1.wav",
+                            value="\\content\\Retrieval-based-Voice-Conversion-WebUI\\raw\\1.wav",
                         )
                         f0method0 = gr.Radio(
                             label=i18n("选择音高提取算法,输入歌声可用pm提速,harvest低音好但巨慢无比"),
@@ -935,12 +935,12 @@ with gr.Blocks() as app:
                     with gr.Column():
                         file_index1 = gr.Textbox(
                             label=i18n("特征检索库文件路径"),
-                            value="E:\\codes\\py39\\vits_vc_gpu_train\\logs\\mi-test-1key\\added_IVF677_Flat_nprobe_7.index",
+                            value="\\content\\Retrieval-based-Voice-Conversion-WebUI\\logs\\mi-test\\added_IVF677_Flat_nprobe_7.index",
                             interactive=True,
                         )
                         file_big_npy1 = gr.Textbox(
                             label=i18n("特征文件路径"),
-                            value="E:\\codes\py39\\vits_vc_gpu_train\\logs\\mi-test-1key\\total_fea.npy",
+                            value="\\content\\Retrieval-based-Voice-Conversion-WebUI\\logs\\mi-test\\total_fea.npy",
                             interactive=True,
                         )
                         index_rate1 = gr.Slider(
@@ -988,12 +988,12 @@ with gr.Blocks() as app:
                     with gr.Column():
                         file_index2 = gr.Textbox(
                             label=i18n("特征检索库文件路径"),
-                            value="E:\\codes\\py39\\vits_vc_gpu_train\\logs\\mi-test-1key\\added_IVF677_Flat_nprobe_7.index",
+                            value="\\content\\Retrieval-based-Voice-Conversion-WebUI\\logs\\mi-test\\added_IVF677_Flat_nprobe_7.index",
                             interactive=True,
                         )
                         file_big_npy2 = gr.Textbox(
                             label=i18n("特征文件路径"),
-                            value="E:\\codes\\py39\\vits_vc_gpu_train\\logs\\mi-test-1key\\total_fea.npy",
+                            value="\\content\\Retrieval-based-Voice-Conversion-WebUI\\logs\\mi-test\\total_fea.npy",
                             interactive=True,
                         )
                         index_rate2 = gr.Slider(
@@ -1006,7 +1006,7 @@ with gr.Blocks() as app:
                     with gr.Column():
                         dir_input = gr.Textbox(
                             label=i18n("输入待处理音频文件夹路径(去文件管理器地址栏拷就行了)"),
-                            value="E:\codes\py39\\vits_vc_gpu_train\\todo-songs",
+                            value="\\content\\Retrieval-based-Voice-Conversion-WebUI\\raw",
                         )
                         inputs = gr.File(
                             file_count="multiple", label=i18n("也可批量输入音频文件, 二选一, 优先读文件夹")
@@ -1039,7 +1039,7 @@ with gr.Blocks() as app:
                     with gr.Column():
                         dir_wav_input = gr.Textbox(
                             label=i18n("输入待处理音频文件夹路径"),
-                            value="E:\\codes\\py39\\vits_vc_gpu_train\\todo-songs",
+                            value="\\content\\Retrieval-based-Voice-Conversion-WebUI\\raw",
                         )
                         wav_inputs = gr.File(
                             file_count="multiple", label=i18n("也可批量输入音频文件, 二选一, 优先读文件夹")
